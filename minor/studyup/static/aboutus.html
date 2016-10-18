@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="ishtyle-aboutus.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="fonts.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="w3.css" media="all"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One&effect=canvas-print">
+    <script src="jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div id="headerwrap">
+		<div id="header">
+			<div id="img">
+				<a href="aboutus.html"><img src="logo.png" id="logo" /></a>
+				<div id="navbar" class="form-group form-inline">
+					<a href="home.html"><button class="w3-btn w3-hover-red w3-large w3-ripple w3-text-shadow">Home</button></a>
+					<button class="w3-btn w3-hover-pink w3-large w3-ripple w3-text-shadow">Forums</button>
+					<button class="w3-btn w3-hover-purple w3-large w3-ripple w3-text-shadow">Questions</button>
+					<a href="games.html"><button class="w3-btn w3-hover-indigo w3-large w3-ripple w3-text-shadow">Games</button></a>
+					<a href="login.html"><button class="w3-btn w3-hover-blue w3-large w3-ripple w3-text-shadow">Login</button></a>
+					<input class="form-control" id="search" placeholder="Search!">
+					<a href="search.html"><img src="search.png" id="search-icon" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contentwrap">
+		<div id="about-us">
+			<br>
+			<p class="text-center font-effect-canvas-print"><font size="8" class="w3-wide" color="white" align=""> About Us </font></p>
+			<hr>
+			
+			<div id="about-text">			
+			<p class="font-effect-canvas-print"><font size="5" color="white" align=""> 
+				<i>Study Up!</i> started as a college project in 2016 with the aim of creating a difference in the way we impart knowledge. With the rapid technologization of almost every aspect of our daily life, it was time for something new.
+Time to create a global platform that connects the experts with those who wish to gain expertise. <br>
+				We are based in Noida, India. <br>
+				<p align="right" class="font-effect-canvas-print">Contact no: 7042322597</p>
+			</font></p>
+			</div>
+
+			<div id="map" style="width:100%;height:180px"></div>
+
+				<script>
+				function myMap() {
+				  var myCenter = new google.maps.LatLng(28.6293002,77.371425);
+				  var mapCanvas = document.getElementById("map");
+				  var mapOptions = {center: myCenter, zoom: 15};
+				  var map = new google.maps.Map(mapCanvas, mapOptions);
+				  var marker = new google.maps.Marker({position:myCenter, animation: google.maps.Animation.BOUNCE});
+  				  marker.setMap(map);
+				  var infowindow = new google.maps.InfoWindow({content: "Study Up! Headquarters"});
+  				  infowindow.open(map,marker);
+  
+				}
+				</script>
+
+				<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+		</div>
+	</div>
+	<div id="footerwrap" class="w3-wide">
+		<br><br><br><br><br>
+		<font size="4" color="white"><center>   &copy Copyright 2016 Study Up! All Rights Reserved. <br>
+		<a href="https://www.facebook.com"><span class="social social-facebook"><img src="icon_f.png" width="40px" height="40px" align="center-right"/></span></a>
+		<a href="https://twitter.com"> <span class="social social-twitter"><img src="icon_t.png" width="40px"  height="40px" align="center-right"/></span></a>
+		<a href="https://plus.google.com"> <span class="social social-googleplus"><img src="googleplus.png" width="40px"  height="40px" align="center-right"/></span></a></center>
+		</font>
+	</div>
+
+</body>
+
+</html>

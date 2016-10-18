@@ -1,0 +1,53 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+#headerwrap
+{
+	width: 100%;
+	height: 137px; /* don't change */
+	background-image: url(header.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#contentwrap
+{
+	width: 100%;
+	min-height: 524px; 
+	height: 524px; /* increase this if necessary */
+	background-image: url(content.jpg);
+	background-size: contain;
+	/* background-repeat: no-repeat; */
+}
+#footerwrap
+{
+	width: 100%;
+	height: 192px; /* don't change */
+	background-image: url(footer.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#header
+{
+	margin:0 auto;
+	height:85px;
+}
+
+#navbar
+{
+	margin-top: 50px;
+	margin-right: 100px;
+	float: right;
+	font-family: raleway;
+}
+
+#games
+{
+	font-family: raleway;
+	margin-left: 200px;
+	margin-right: 200px;
+}
